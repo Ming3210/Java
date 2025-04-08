@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionDB {
-    private static final String DRIVER = "com.mysql.cj.jdbc.Driver";//chỉ cần thiết nếu jdbc là type-3
+    private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
     private static final String URL = "jdbc:mysql://localhost:3306/StudentManagement";
     private static final String USER_NAME = "root";
     private static final String PASSWORD = "1234$";
@@ -15,9 +15,7 @@ public class ConnectionDB {
     public static Connection openConnection() {
         Connection conn = null;
         try {
-            //1. Set driver kết nối đến CSDL MySQL - Với type-3 trở xuống
-//            Class.forName(DRIVER);//Type-4 tự nhận
-            //2. Khởi tạo đối tượng connection từ ứng dụng Java đến CSDL
+
             conn = DriverManager.getConnection(URL, USER_NAME, PASSWORD);
         } catch (SQLException e) {
             System.err.println("Có lỗi trong quá trình kết nối với CSDL: " + e.getMessage());
