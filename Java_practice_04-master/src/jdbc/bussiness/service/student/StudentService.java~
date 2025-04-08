@@ -1,0 +1,4 @@
+package jdbc.bussiness.service.student;
+
+public class StudentService {
+}

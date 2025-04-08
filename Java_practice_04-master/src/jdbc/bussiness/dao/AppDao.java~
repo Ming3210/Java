@@ -1,0 +1,4 @@
+package jdbc.bussiness.dao;
+
+public class AppDao {
+}

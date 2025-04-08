@@ -1,0 +1,4 @@
+package jdbc.bussiness.model;
+
+public class Student {
+}
