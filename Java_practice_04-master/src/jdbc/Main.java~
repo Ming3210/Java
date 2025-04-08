@@ -1,6 +1,6 @@
 package jdbc;
 
-import presentation.StudentUI;
+import jdbc.presentation.StudentUI;
 
 import java.util.Scanner;
 
